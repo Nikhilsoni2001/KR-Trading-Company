@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kr_trading_factory/constants.dart';
+import 'package:kr_trading_factory/size_config.dart';
 
 class RoundedButton extends StatelessWidget {
   final String text;
@@ -28,7 +29,7 @@ class RoundedButton extends StatelessWidget {
             onPressed: press,
             child: Text(
               text,
-              style: TextStyle(color: textColor),
+              style: TextStyle(color: textColor, fontSize: getPropotionateScreenWidth(18)),
             )),
       ),
     );

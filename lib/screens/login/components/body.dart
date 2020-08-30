@@ -24,7 +24,6 @@ class Body extends StatelessWidget {
             Text(
               'LOGIN',
               style: TextStyle(
-                  fontFamily: 'Roboto',
                   fontSize: 28.0,
                   letterSpacing: 1.2,
                   fontWeight: FontWeight.bold,

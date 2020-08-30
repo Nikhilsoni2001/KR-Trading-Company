@@ -4,7 +4,6 @@ import 'package:kr_trading_factory/components/already_have_an_account.dart';
 import 'package:kr_trading_factory/components/roundedButton.dart';
 import 'package:kr_trading_factory/components/rounded_input_field.dart';
 import 'package:kr_trading_factory/components/rounded_password_field.dart';
-import 'package:kr_trading_factory/constants.dart';
 import 'package:kr_trading_factory/screens/login/login_screen.dart';
 import 'package:kr_trading_factory/screens/signUp/compponents/background.dart';
 import 'package:kr_trading_factory/screens/signUp/compponents/or_divider.dart';
