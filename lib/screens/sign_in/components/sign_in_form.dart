@@ -32,7 +32,9 @@ class _SignInFormState extends State<SignInForm> {
                 }
               },
             ),
-            SizedBox(height: getPropotionateScreenHeight(8),),
+            SizedBox(
+              height: getPropotionateScreenHeight(8),
+            ),
             AlreadyHaveAnAccountCheck(
               login: true,
               press: () {
@@ -59,8 +61,7 @@ class _SignInFormState extends State<SignInForm> {
   TextFormField buildEmailFormField() {
     return TextFormField(
         keyboardType: TextInputType.emailAddress,
-        onChanged: (value) {
-        },
+        onChanged: (value) {},
         decoration: InputDecoration(
           labelText: 'Email ',
           hintText: 'Enter your email',
