@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:kr_trading_factory/components/roundedButton.dart';
 import 'package:kr_trading_factory/constants.dart';
-import 'package:kr_trading_factory/screens/login/login_screen.dart';
-import 'package:kr_trading_factory/screens/signUp/sign_up.dart';
+import 'package:kr_trading_factory/screens/sign_in/sign_in_screen.dart';
+import 'package:kr_trading_factory/screens/sign_up/sign_up.dart';
 import 'package:kr_trading_factory/screens/welcome/components/background.dart';
 
 class Body extends StatelessWidget {
@@ -45,11 +45,7 @@ class Body extends StatelessWidget {
             RoundedButton(
               text: 'LOGIN',
               press: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return LoginScreen();
-                  },
-                ));
+                Navigator.pushNamed(context, SignInScreen.routeName);
               },
             ),
             RoundedButton(

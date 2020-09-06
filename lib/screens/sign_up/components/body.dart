@@ -4,10 +4,11 @@ import 'package:kr_trading_factory/components/already_have_an_account.dart';
 import 'package:kr_trading_factory/components/roundedButton.dart';
 import 'package:kr_trading_factory/components/rounded_input_field.dart';
 import 'package:kr_trading_factory/components/rounded_password_field.dart';
-import 'package:kr_trading_factory/screens/login/login_screen.dart';
-import 'package:kr_trading_factory/screens/signUp/compponents/background.dart';
-import 'package:kr_trading_factory/screens/signUp/compponents/or_divider.dart';
-import 'package:kr_trading_factory/screens/signUp/compponents/social_icons.dart';
+import 'package:kr_trading_factory/screens/sign_in/sign_in_screen.dart';
+import 'package:kr_trading_factory/screens/sign_up/components/background.dart';
+import 'package:kr_trading_factory/screens/sign_up/components/social_icons.dart';
+
+import 'or_divider.dart';
 
 class Body extends StatelessWidget {
   final Widget child;
@@ -45,9 +46,7 @@ class Body extends StatelessWidget {
             AlreadyHaveAnAccountCheck(
               login: false,
               press: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return LoginScreen();
-                }));
+                Navigator.pushNamed(context, SignInScreen.routeName);
               },
             ),
             OrDivider(),
